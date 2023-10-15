@@ -19,6 +19,10 @@ public class Profile {
         this.phone = phone;
     }
 
+    public Profile(String name, String age, String email, String phone) {
+        this(name, Integer.parseInt(age), email, Long.parseLong(phone));
+    }
+
     public String getName() {
         return name;
     }
